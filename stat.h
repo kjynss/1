@@ -6,7 +6,7 @@ void DivisionLine() {
 	cout << "--------------------\n\n";
 }
 
-struct Stat {
+class Stat {
 public:
 	void ShowStats(Weapon* w) {
 		ResetStat(w);
@@ -17,7 +17,7 @@ public:
 	void ResetStat(Weapon* w) {
 		GetWeaponStat(w);
 		TotalINT = BaseINT + WeaponINT;
-		TotalSTR = BaseINT + WeaponSTR;
+		TotalSTR = BaseSTR + WeaponSTR;
 	}
 
 	void LevelUP() {
